@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: #0f0f0f;
+  background-color: #f6f6f6;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  user-select: none;
+}
+
+p, li {
+  user-select: text;
+}
+
+.glass {
+  background: rgba( 255, 255, 255, 0.05 );
+  box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.37 );
+  backdrop-filter: blur( 10px );
+  -webkit-backdrop-filter: blur( 10px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.11 );
+}
+
+.background-paralax {
+  scale: 1.1;
+  transform: translate(calc(var(--mouse-x)/-30), calc(var(--mouse-y)/-30));
+  transition: transform 1000ms ease-out;
+}
+
+.background-overlay {
+  mask: radial-gradient(circle at var(--mouse-x) var(--mouse-y), rgba(0,0,0,0), rgba(0,0,0,1));
+  backdrop-filter: grayscale(1);
+}
+
+.social-icon {
+  @apply max-w-12 hover:scale-105 transition-transform;
+}
