@@ -34,7 +34,7 @@ p, li {
   border: 1px solid rgba( 255, 255, 255, 0.11 );
 }
 
-.background-paralax {
+.background-parallax {
   transform: translate(calc(var(--mouse-x)/-30), calc(var(--mouse-y)/-30)) scale(1.1);
   transition: transform 1000ms ease-out;
 }

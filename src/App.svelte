@@ -19,7 +19,7 @@
 </script>
 
 <div class="grid overflow-hidden">
-  <img src="background.png" alt="background" class="col-start-1 row-start-1 object-cover w-screen h-screen background-paralax"/>
+  <img src="background.png" alt="background" class="col-start-1 row-start-1 object-cover w-screen h-screen background-parallax"/>
   <div class="col-start-1 row-start-1 object-cover w-screen h-screen background-overlay"></div>
   <main class="col-start-1 row-start-1 grid place-items-center w-screen h-screen">
     <div class="flex flex-row h-full w-full p-16 gap-16">
